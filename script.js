@@ -1,6 +1,6 @@
 const textInput = document.getElementById('text-input');
 const charCount = document.getElementById('char-count');
-const maxChars = 50;
+const maxChars = 1000;
 
 textInput.addEventListener('input', function() {
     let inputText = textInput.value;
@@ -11,7 +11,7 @@ textInput.addEventListener('input', function() {
     }
 
     const currentLength = inputText.length;
-    charCount.textContent = `Character Count: ${currentLength}/50`;
+    charCount.textContent = `Character Count: ${currentLength}/1000`;
 
     if (currentLength === maxChars) {
         charCount.style.color = 'red'; 
